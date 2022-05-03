@@ -439,230 +439,6 @@ Apr 29 10:05:26 proxy-sing sshd[5088]: Accepted password for nika from 213.59.14
 {
   "_index": "filebeat-7.17.3-2022.04.29",
   "_type": "_doc",
-  "_id": "rur0dIABSkcyO0_gs9GB",
-  "_version": 1,
-  "_score": 1,
-  "_source": {
-    "ecs": {
-      "version": "1.12.0"
-    },
-    "server_name": "proxy-sing",
-    "@timestamp": "2022-04-29T10:53:54.331Z",
-    "service": {
-      "type": "system"
-    },
-    "input": {
-      "type": "log"
-    },
-    "cloud": {
-      "region": "sgp1",
-      "instance": {
-        "id": "297628093"
-      },
-      "provider": "digitalocean",
-      "service": {
-        "name": "Droplets"
-      }
-    },
-    "log": {
-      "file": {
-        "path": "/var/log/auth.log"
-      },
-      "offset": 26221
-    },
-    "fileset": {
-      "name": "auth"
-    },
-    "user_name": "    nika ",
-    "command": "/usr/bin/nano test.log",
-    "agent": {
-      "version": "7.17.3",
-      "ephemeral_id": "ce7a72e4-5321-48db-ad74-d9be2f47ab0a",
-      "id": "913c66a2-6afc-4579-9ad6-a1e9b1805dae",
-      "name": "proxy-sing",
-      "hostname": "proxy-sing",
-      "type": "filebeat"
-    },
-    "@version": "1",
-    "host": {
-      "ip": [
-        "128.199.229.53",
-        "10.15.0.5",
-        "fe80::48cf:4cff:fe3f:21bb",
-        "10.104.0.2",
-        "fe80::c02a:a8ff:fe14:c561"
-      ],
-      "id": "87d83c1a544b6a958acd6c2f626b83fc",
-      "name": "proxy-sing",
-      "hostname": "proxy-sing",
-      "architecture": "x86_64",
-      "os": {
-        "version": "20.04.4 LTS (Focal Fossa)",
-        "family": "debian",
-        "kernel": "5.4.0-107-generic",
-        "name": "Ubuntu",
-        "codename": "focal",
-        "type": "linux",
-        "platform": "ubuntu"
-      },
-      "mac": [
-        "4a:cf:4c:3f:21:bb",
-        "c2:2a:a8:14:c5:61"
-      ],
-      "containerized": false
-    },
-    "tags": [
-      "beats_input_codec_plain_applied"
-    ],
-    "event": {
-      "module": "system",
-      "timezone": "+00:00",
-      "dataset": "system.auth"
-    }
-  },
-  "fields": {
-    "server_name": [
-      "proxy-sing"
-    ],
-    "host.os.name.text": [
-      "Ubuntu"
-    ],
-    "user_name": [
-      "    nika "
-    ],
-    "host.hostname": [
-      "proxy-sing"
-    ],
-    "host.mac": [
-      "4a:cf:4c:3f:21:bb",
-      "c2:2a:a8:14:c5:61"
-    ],
-    "service.type": [
-      "system"
-    ],
-    "host.ip": [
-      "128.199.229.53",
-      "10.15.0.5",
-      "fe80::48cf:4cff:fe3f:21bb",
-      "10.104.0.2",
-      "fe80::c02a:a8ff:fe14:c561"
-    ],
-    "cloud.instance.id": [
-      "297628093"
-    ],
-    "agent.type": [
-      "filebeat"
-    ],
-    "event.module": [
-      "system"
-    ],
-    "host.os.version": [
-      "20.04.4 LTS (Focal Fossa)"
-    ],
-    "host.os.kernel": [
-      "5.4.0-107-generic"
-    ],
-    "@version": [
-      "1"
-    ],
-    "host.os.name": [
-      "Ubuntu"
-    ],
-    "agent.name": [
-      "proxy-sing"
-    ],
-    "host.name": [
-      "proxy-sing"
-    ],
-    "host.id": [
-      "87d83c1a544b6a958acd6c2f626b83fc"
-    ],
-    "event.timezone": [
-      "+00:00"
-    ],
-    "host.os.type": [
-      "linux"
-    ],
-    "cloud.region": [
-      "sgp1"
-    ],
-    "fileset.name": [
-      "auth"
-    ],
-    "host.os.codename": [
-      "focal"
-    ],
-    "input.type": [
-      "log"
-    ],
-    "log.offset": [
-      26221
-    ],
-    "agent.hostname": [
-      "proxy-sing"
-    ],
-    "command": [
-      "/usr/bin/nano test.log"
-    ],
-    "tags": [
-      "beats_input_codec_plain_applied"
-    ],
-    "host.architecture": [
-      "x86_64"
-    ],
-    "cloud.provider": [
-      "digitalocean"
-    ],
-    "@timestamp": [
-      "2022-04-29T10:53:54.331Z"
-    ],
-    "agent.id": [
-      "913c66a2-6afc-4579-9ad6-a1e9b1805dae"
-    ],
-    "cloud.service.name": [
-      "Droplets"
-    ],
-    "ecs.version": [
-      "1.12.0"
-    ],
-    "host.containerized": [
-      false
-    ],
-    "host.os.platform": [
-      "ubuntu"
-    ],
-    "log.file.path": [
-      "/var/log/auth.log"
-    ],
-    "agent.ephemeral_id": [
-      "ce7a72e4-5321-48db-ad74-d9be2f47ab0a"
-    ],
-    "agent.version": [
-      "7.17.3"
-    ],
-    "host.os.family": [
-      "debian"
-    ],
-    "event.dataset": [
-      "system.auth"
-    ]
-  }
-}
-```
-### 3. sudo
-#### message
-```
-Apr 29 08:12:54 proxy-sing sudo:     nika : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/nano /etc/squid/conf.d/squid.conf
-```
-#### filter
-```
-"%{SYSLOGTIMESTAMP} %{DATA:server_name} sudo: %{DATA:user_name}: %{GREEDYDATA} ; COMMAND=%{GREEDYDATA:command}"
-```
-#### json
-```
-{
-  "_index": "filebeat-7.17.3-2022.04.29",
-  "_type": "_doc",
   "_id": "c-rwdIABSkcyO0_gH9GH",
   "_version": 4,
   "_score": 1,
@@ -877,6 +653,230 @@ Apr 29 08:12:54 proxy-sing sudo:     nika : TTY=pts/0 ; PWD=/root ; USER=root ; 
     ],
     "status": [
       "Accepted password"
+    ]
+  }
+}
+```
+### 3. sudo
+#### message
+```
+Apr 29 08:12:54 proxy-sing sudo:     nika : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/nano /etc/squid/conf.d/squid.conf
+```
+#### filter
+```
+"%{SYSLOGTIMESTAMP} %{DATA:server_name} sudo: %{DATA:user_name}: %{GREEDYDATA} ; COMMAND=%{GREEDYDATA:command}"
+```
+#### json
+```
+{
+  "_index": "filebeat-7.17.3-2022.04.29",
+  "_type": "_doc",
+  "_id": "rur0dIABSkcyO0_gs9GB",
+  "_version": 1,
+  "_score": 1,
+  "_source": {
+    "ecs": {
+      "version": "1.12.0"
+    },
+    "server_name": "proxy-sing",
+    "@timestamp": "2022-04-29T10:53:54.331Z",
+    "service": {
+      "type": "system"
+    },
+    "input": {
+      "type": "log"
+    },
+    "cloud": {
+      "region": "sgp1",
+      "instance": {
+        "id": "297628093"
+      },
+      "provider": "digitalocean",
+      "service": {
+        "name": "Droplets"
+      }
+    },
+    "log": {
+      "file": {
+        "path": "/var/log/auth.log"
+      },
+      "offset": 26221
+    },
+    "fileset": {
+      "name": "auth"
+    },
+    "user_name": "    nika ",
+    "command": "/usr/bin/nano test.log",
+    "agent": {
+      "version": "7.17.3",
+      "ephemeral_id": "ce7a72e4-5321-48db-ad74-d9be2f47ab0a",
+      "id": "913c66a2-6afc-4579-9ad6-a1e9b1805dae",
+      "name": "proxy-sing",
+      "hostname": "proxy-sing",
+      "type": "filebeat"
+    },
+    "@version": "1",
+    "host": {
+      "ip": [
+        "128.199.229.53",
+        "10.15.0.5",
+        "fe80::48cf:4cff:fe3f:21bb",
+        "10.104.0.2",
+        "fe80::c02a:a8ff:fe14:c561"
+      ],
+      "id": "87d83c1a544b6a958acd6c2f626b83fc",
+      "name": "proxy-sing",
+      "hostname": "proxy-sing",
+      "architecture": "x86_64",
+      "os": {
+        "version": "20.04.4 LTS (Focal Fossa)",
+        "family": "debian",
+        "kernel": "5.4.0-107-generic",
+        "name": "Ubuntu",
+        "codename": "focal",
+        "type": "linux",
+        "platform": "ubuntu"
+      },
+      "mac": [
+        "4a:cf:4c:3f:21:bb",
+        "c2:2a:a8:14:c5:61"
+      ],
+      "containerized": false
+    },
+    "tags": [
+      "beats_input_codec_plain_applied"
+    ],
+    "event": {
+      "module": "system",
+      "timezone": "+00:00",
+      "dataset": "system.auth"
+    }
+  },
+  "fields": {
+    "server_name": [
+      "proxy-sing"
+    ],
+    "host.os.name.text": [
+      "Ubuntu"
+    ],
+    "user_name": [
+      "    nika "
+    ],
+    "host.hostname": [
+      "proxy-sing"
+    ],
+    "host.mac": [
+      "4a:cf:4c:3f:21:bb",
+      "c2:2a:a8:14:c5:61"
+    ],
+    "service.type": [
+      "system"
+    ],
+    "host.ip": [
+      "128.199.229.53",
+      "10.15.0.5",
+      "fe80::48cf:4cff:fe3f:21bb",
+      "10.104.0.2",
+      "fe80::c02a:a8ff:fe14:c561"
+    ],
+    "cloud.instance.id": [
+      "297628093"
+    ],
+    "agent.type": [
+      "filebeat"
+    ],
+    "event.module": [
+      "system"
+    ],
+    "host.os.version": [
+      "20.04.4 LTS (Focal Fossa)"
+    ],
+    "host.os.kernel": [
+      "5.4.0-107-generic"
+    ],
+    "@version": [
+      "1"
+    ],
+    "host.os.name": [
+      "Ubuntu"
+    ],
+    "agent.name": [
+      "proxy-sing"
+    ],
+    "host.name": [
+      "proxy-sing"
+    ],
+    "host.id": [
+      "87d83c1a544b6a958acd6c2f626b83fc"
+    ],
+    "event.timezone": [
+      "+00:00"
+    ],
+    "host.os.type": [
+      "linux"
+    ],
+    "cloud.region": [
+      "sgp1"
+    ],
+    "fileset.name": [
+      "auth"
+    ],
+    "host.os.codename": [
+      "focal"
+    ],
+    "input.type": [
+      "log"
+    ],
+    "log.offset": [
+      26221
+    ],
+    "agent.hostname": [
+      "proxy-sing"
+    ],
+    "command": [
+      "/usr/bin/nano test.log"
+    ],
+    "tags": [
+      "beats_input_codec_plain_applied"
+    ],
+    "host.architecture": [
+      "x86_64"
+    ],
+    "cloud.provider": [
+      "digitalocean"
+    ],
+    "@timestamp": [
+      "2022-04-29T10:53:54.331Z"
+    ],
+    "agent.id": [
+      "913c66a2-6afc-4579-9ad6-a1e9b1805dae"
+    ],
+    "cloud.service.name": [
+      "Droplets"
+    ],
+    "ecs.version": [
+      "1.12.0"
+    ],
+    "host.containerized": [
+      false
+    ],
+    "host.os.platform": [
+      "ubuntu"
+    ],
+    "log.file.path": [
+      "/var/log/auth.log"
+    ],
+    "agent.ephemeral_id": [
+      "ce7a72e4-5321-48db-ad74-d9be2f47ab0a"
+    ],
+    "agent.version": [
+      "7.17.3"
+    ],
+    "host.os.family": [
+      "debian"
+    ],
+    "event.dataset": [
+      "system.auth"
     ]
   }
 }
